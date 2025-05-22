@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery.js"></script>
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="tig1.jpg" alt="Image 1" onclick="openModal(this)">
+    <img src="tig2.jpg" alt="Image 2" onclick="openModal(this)">
+    <img src="tig1.jpg" alt="Image 3" onclick="openModal(this)">
+    <img src="tig2.jpg" alt="Image 4" onclick="openModal(this)">
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="caption"></div>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
